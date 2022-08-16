@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Alert</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/c81e5efdf6.js" crossorigin="anonymous"></script>
+</head>
+<body onload="date()">
+    <header>
+        <div id="title"><i class="fa-regular fa-clock"></i>Music Alert</div>
+        <div id="time">
+            <i>now:</i><i id="date"></i>
+        </div>
+        <a href="https://www.youtube.com/" id="link"><i class="fa-brands fa-youtube"></i>Youtube Link</a>
+    </header>
+    <div class="func">
+        <form method="get" autocomplete="off" id="form">
+            <div id="q1">
+                <h2>1.YouTube等のURLを入力してください。</h2>
+                <input type="url" name="url" class="url box" required>
+            </div>
+            <div id="q2">
+                <h2>2.時間を指定してください。</h2>
+                <p>(1)経過時間(分)で指定する:</p>
+                <input type="number" name="num" class="timer box">
+                <p>(2)1時間ごとで指定する:  (時間指定しない場合は指定なしを選択)</p>
+                <select name="hour" id="hour" class="box">
+                    <option value="null">指定なし</option>
+                </select>
+                <button class="decide">確定</button>
+            </div>
+        </form>
+        <div class="btn">
+            <button class="setting btn2">タイマーの設定表示</button>
+            <button class="on btn2" onclick="timerOn()">タイマースタート</button>
+            <button class="off btn2" onclick="timerOff()">タイマーキャンセル</button>
+        </div>
+        <div id="set"></div>
+    </div>
+    <footer>
+        Copyright(c) 2022 fk
+    </footer>
+    <script src="function.js"></script>
+</body>
+</html>
