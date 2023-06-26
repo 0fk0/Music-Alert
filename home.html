@@ -5,27 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Alert</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c81e5efdf6.js" crossorigin="anonymous"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1><i class="fa-regular fa-clock"></i>Music Alert</h1>
-        <h2>-音楽を用いて習慣化-</h2>
-    </header>
-    <div id="intro">
-        <div class="content sleep">
-            <i class="fa-solid fa-bed fa-5x bed"></i>
-            <p>寝る前のルーティンとして決まった音楽を聴く</p>
+    <div class="uk-flex uk-flex-column uk-flex-between uk-section-secondary uk-padding-small" uk-height-viewport="expand: true">
+        <header class="uk-container uk-flex uk-flex-center uk-text-emphasis uk-margin-xlarge-top uk-margin-xlarge-bottom">
+            <h1 class="uk-text-large@m uk-text-small@s"><i uk-icon="icon: future; ratio: 1.5"></i>Music Alert</h1>
+            <h2 class="uk-text-large@m uk-text-small@s">-音楽を用いて習慣化-</h2>
+        </header>
+        <div class="uk-flex uk-flex-column uk-flex-center" uk-height-viewport="expand: true">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-container uk-section-secondary uk-border-rounded uk-margin-small-left uk-margin-small-right uk-padding" style="border: 5px solid gray;">
+                    <i class="fa-solid fa-bed fa-5x bed uk-flex uk-flex-center uk-text-large@m uk-text-small@s"></i>
+                    <p class="uk-text-large@m uk-text-small@m">寝る前のルーティンとして決まった音楽を聴く</p>
+                </div>
+                <div class="uk-container uk-section-secondary uk-border-rounded uk-margin-small-left uk-margin-small-right uk-padding" style="border: 5px solid gray;"">
+                    <i class="fa-solid fa-file-pen fa-5x pen uk-flex uk-flex-center uk-text-large@m uk-text-small@s"></i>
+                    <p class="uk-text-large@m uk-text-small@s">勉強の開始のルーティンとして決まった音楽を聴く</p>
+                </div>
+            </div>
+            <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom uk-margin-small-right">
+                <button id="link" class="uk-align-right uk-margin-remove-vertical uk-border-rounded">＞設定画面へ</button>
+            </div>
         </div>
-        <div class="content study">
-            <i class="fa-solid fa-file-pen fa-5x pen"></i>
-            <p>勉強の開始のルーティンとして決まった音楽を聴く</p>
-        </div>
+        <footer class="uk-flex uk-flex-center uk-flex-bottom">
+            Copyright(c) 2023 fk
+        </footer>
     </div>
-    <a href="./next.html" id="link">＞設定画面へ</a>
-    <footer>
-        Copyright(c) 2022 fk
-    </footer>
+    <script src="./btn.js"></script>
 </body>
 </html>
